@@ -1,0 +1,74 @@
+p {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+    color: white;
+    background-color: #6678b1;
+    font-size: 45px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+    font-size: 32px;
+    background: white;
+    max-width: 70%;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    font-weight: normal;
+    font-size: large;
+    color: #213c56;
+    border-bottom: 2px solid #213c56;
+    padding: 10px 8px;
+}
+
+td {
+    border-bottom: 1px solid #ccc;
+    color: #6678b1;
+    padding: 9px 8px;
+    transition: .3s linear;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+}
+
+#active, #passive:hover, button:hover {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+    font-size: 32px;
+    text-decoration: none;
+    background-color: #6678b1;
+    color: white;
+    border-radius: 40px;
+    display: inline-block;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    transition: .3s ease-in-out;
+    outline: none;
+}
+
+#passive, button, select, input {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+    font-size: 32px;
+    border-color: #6678b1;
+    text-decoration: none;
+    background-color: white;
+    color: #6678b1;
+    border-radius: 40px;
+    display: inline-block;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    transition: .3s ease-in-out;
+    outline: none;
+}
+
+button, select, input {
+    margin: 50px 20px;
+}

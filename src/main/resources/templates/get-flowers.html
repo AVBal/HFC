@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="table.css">
+    <title>Каталог</title>
+</head>
+<body>
+<p>Каталог цветов</p>
+<a id="active" href="/">Каталог</a>
+<a id="passive" href="/showSearch">Поиск</a>
+<table align="center">
+    <tr>
+        <th> Фотография</th>
+        <th> Название</th>
+        <th> Семейство</th>
+        <th> Цвет (если цветущее)</th>
+        <th> Цена</th>
+        <th> Особенности ухода</th>
+    </tr>
+    <tr th:if="${#lists.isEmpty(flowers)}">
+        <td colspan="2"> Каталог пуст</td>
+    </tr>
+    <tr th:each="flower : ${flowers}">
+        <td><img th:src="${flower.photoPath}"/></td>
+        <td><span th:text="${flower.name}"> Название </span></td>
+        <td><span th:text="${flower.family}"> Семейство </span></td>
+        <td><span th:text="${flower.color}"> Цвет </span></td>
+        <td><span th:text="${flower.price}"> Цена </span></td>
+        <td><span th:text="${flower.care}"> Особенности ухода </span></td>
+    </tr>
+</table>
+</body>
+</html>
